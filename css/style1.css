@@ -1,0 +1,22 @@
+
+.container2 {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:5px;
+  padding-right:5px;
+}
+.container2:before, .container2:after {
+  content: " ";
+  display: table;
+}
+.container2:after {
+  clear: both;
+}
+
+
+@media (min-width: 1200px) {
+  .container2 {
+    max-width: 1100px;
+  }
+}
+

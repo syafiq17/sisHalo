@@ -1,0 +1,489 @@
+/* General Blueprint Style */
+@/*import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);*/
+@font-face {
+	font-family: 'bpicons';
+	src:url('../fonts/bpicons/bpicons.eot');
+	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bpicons/bpicons.woff') format('woff'),
+		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
+		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+	
+	font-weight: normal;
+	font-style: normal;
+} /* Made with http://icomoon.io/ */
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;background-color:#f2f2f2}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+.kotak{
+	border-left:3px solid #2c3e50;
+	text-align:justify;
+	font-size:18px;
+	max-width:60em; 
+	background:white; 
+	padding:20px;
+	line-height: 150%;
+	margin:10px auto;
+}
+.kotak2{
+	text-align:left;line-height:34px;font-size:18px;font-weight:700;padding:0 5px;border-left:3px solid rgba(0,0,0,0.5);
+}
+#view .kotak2{
+	color:#2c3e50;background:lightblue;
+}
+#footer .kotak2{
+	color:lightblue;background:#2c3e50;border-bottom:solid 2px lightblue;border-left:0;
+}
+.kotakjudul{
+	float:left;
+	width:34px;
+	height:100%;;
+	position:relative;
+	left:-5px;
+	text-align:center;
+	background-color:#2c3e50;
+	color:white;
+	margin-right:7px;
+}
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    //color: #47a3da;
+    color: #2c3e50;
+}
+
+
+a {
+	color: #2c3e47;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	color: #000;
+}
+nav.navi{
+	margin:0;
+	padding:2px 30px;
+	//background-color:#2c3e47;
+	background-color:#2c3e50;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+	z-index:9;
+	width:100%;
+	height: 42px;
+	position:fixed;
+	overflow:hiden;
+	
+	
+}
+
+nav.navi span{
+	overflow:hidden;
+}
+nav.navi span.satu{
+	width:300px;
+	//float:left;
+	position:absolute;
+	z-index:-1;
+}
+nav.navi span.dua{
+	//display:none;
+	float:right;
+	width:100px;
+	//width:0px;
+	//position:relative;
+	z-index:1;
+}
+
+nav.navi span.menu2{
+	padding:0 0 0 10px; 
+	color:lightblue;
+	width:42px;
+	height:42px;
+	font-size:30px;
+	float:right;
+	line-height:38px;
+	position:absolute;
+	right:33px;
+}
+.keluar{
+	//padding:10px; 
+	color:lightblue;
+	font-size:28px;
+	cursor:pointer;
+	right:0;
+	top:0;
+	color:black;position:fixed;margin:2px;z-index:10000000;
+}
+
+.angka{
+	margin:2px 0 0 2px;
+	position:fixed;
+	//border:red solid 1px;
+	
+}
+.tes:hover,.keluar:hover{
+	opacity:0.9;
+}
+nav.navi a{
+	-webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius:2px;
+	color:black;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	box-sizing:border-box;
+	margin: 0px;
+	font-weight: 700;
+	line-height: 38px;
+	width:33%;
+	position:relative;
+	z-index:2;
+	float:left;
+	color:white;
+}
+nav.navi a:hover{
+	color:#2c3e50;
+	background:#b3b3ff;
+	background:lightblue;
+}
+nav.navi input[type=submit]{
+	display:none;
+}
+select:focus,
+input:focus,input[type=number]:focus{
+    border-color: lightblue;
+	
+    border-radius: 5px;
+    /*box-shadow: inset
+                0 0 2px 0
+                rgba(0, 0, 0, 0.075),
+                0 0 12px 0
+                rgba(82, 168, 236, 0.6);*/
+    outline: 0;
+}
+button[type=submit]{
+	color:lightblue;
+	background-color:#2c3e50;
+	margin:0px;
+	padding:0px;
+	font-size: 17px;
+	height: 33px;
+	border:0px;
+	width:100%;
+	border-radius:3px;
+}
+.icon{
+	cursor:pointer;
+}
+button.tes,select#selfield{
+	color:lightblue;
+	background-color:#2c3e50;
+	margin:5px 0 auto;
+	padding:0px 10px;
+	font-size: 14px;
+	height: 28px;
+	border:2px solid lightblue;
+	max-width:355px;
+	cursor:pointer;
+	border-radius:3px;
+	position:relative;
+	
+}
+button.tes{
+	border:0;
+	margin:0;
+}
+button.tes:active{
+	outline:none;
+	border:none;
+}
+button.tes:focus {outline:0;}
+input,input[type=number],nav.navi select,nav.navi input.search{
+	margin:0px;
+	font-size:14px;
+	padding:10px 2px 0px 2px;
+	border:0;
+    border-left: 2px solid #2c3e50;
+    border-right: 2px solid #2c3e50;
+	border-radius:3px;
+    font-size: 14px;
+	height: 38px;
+	width:100%;
+	background:white;
+	
+}
+.tengah{
+	display:block;position:relative;background:white;height:38px;width:100%;padding:0px 0px;
+}
+.form1{
+	font-size:8px;
+	color:black;
+	background:white;
+	position:absolute;max-width:330px;border:0;left:0;rigth:0;margin:0 auto;
+	
+}
+
+.map{
+	clear:both;
+}
+.legend{
+	font-size:12px;
+}
+.float1,.float2,.float3,.float4{
+	float:right;
+	margin: 0 0.5px;
+	//overflow:hidden;
+}
+.float1{
+	min-width:100px;
+	max-width:140px;
+	margin-left:2px;
+}
+.float2{
+	width:60px;
+}
+.float3{
+	height:33px;
+	margin:2.5px 0;
+	width:33px;
+	//clear:both;
+	//float:right;
+	margin-right:1px;
+	margin-left:3px;
+	z-index:1500000;
+	overflow:hidden;
+}
+.float4{
+	width:60px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+/*menu dan icon gis*/
+
+.menugis{
+	width:100%;height:28px;padding:5px;background:rgba(0,0,0,0.12)
+}
+.icongis{
+	position:absolute;font-size:18px;max-width:40px;padding:0 6px;text-align:center;border:0;left:0;right:0;margin:0 auto;
+}
+.icongis:hover{
+	color:rgba(0,0,0,0.5);
+}
+
+
+/*--------------------*/
+header {
+	max-width: 100%;
+	text-align:center;
+	padding:10px 0;
+	position:relative;
+	box-sizing: border-box;
+	background: lightblue;
+	width:100%;
+	color:#2c3e50;
+	
+	
+}
+.current-demo{
+	color:#2c3e50;
+	background:rgba(0,0,0,0.6);
+	border-bottom:solid 4px lightblue;
+}
+.yel{
+	color:white;
+	font-size:17px
+}
+.container > header table {
+	//float: left;
+	text-align:center;
+	margin: 0 auto;
+}
+header th,header td,header tr{
+	border:0px solid red;
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+	text-align:center;
+
+}
+
+.container > header  img{
+	margin:0 7px 0 0;
+	height:55px;
+	
+}
+.container > header  span.dua {
+	display: block;
+	font-size: 1.2em;
+	font-weight: 700;
+	letter-spacing: 0.5em;
+	padding:0;
+	position:relative;top:5px;
+}
+.container > header span.tiga {
+	font-size: 2.125em;
+	//font-weight: 400;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin:0;padding:0;
+	position:relative;bottom:5px
+}
+
+
+/* Related demos */
+.content {
+	padding: 1em 0 3em;
+	margin: 0 auto;
+	background: #2c3e50;
+	color:white;
+	width:100%;
+	border-top:solid lightblue 0px;
+	color:white;
+}
+.content--related {
+	text-align: center;
+	
+	padding: 0 1em;
+	color:white;
+}
+.content a{
+	color:lightblue;
+	
+}
+.media-item {
+	display: inline-block;
+	padding: 0.5em;
+	vertical-align: top;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	color:white;
+	
+}
+.content  p{
+	color:white;
+}
+.media-item__img {
+	max-width: 100%;
+	opacity: 0.3;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	margin-top:10px;
+}
+
+.media-item__img:hover ,
+.media-item__img:focus {
+	opacity: 1;
+}
+
+.media-item__title {
+	margin: 0;
+	padding: 0.5em;
+	font-size: 1em;
+	color:lightblue;
+}
+
+@media screen and (max-width: 50em) {
+	nav.navi span.satu{
+		width:210px;
+	}
+
+}
+
+
+@media screen and (max-width: 43em) {
+	nav.navi{
+		padding:2px 7px;
+		height: 42px;
+		
+	}
+.kotak{
+	border-left:3px solid #2c3e50;
+	text-align:justify;font-size:16px;padding:10px;line-height: 150%;margin:7px;
+}
+.kotak2{
+	background-color:lightblue;text-align:left;border-left:3px solid rgba(0,0,0,0.5);line-height:28px;font-size:16px;font-weight:700;
+}
+.kotakjudul{
+	float:left;
+	width:28px;
+	height:28px;
+	text-align:center;
+	margin-right:5px;
+}
+	nav.navi span.menu2{
+		right:10px;
+	}
+}
+@media screen and (max-width: 635px) {
+	nav.navi{
+		padding:2px 7px;
+	}
+}
+@media screen and (max-width: 30em) {
+	.kotak{
+	border-left:2px solid #2c3e50;
+	text-align:justify;font-size:14px;padding:10px;
+}
+.kotak2{
+	background-color:lightblue;text-align:left;border-left:3px solid rgba(0,0,0,0.5)line-height:26px;font-size:14px;font-weight:700;
+}
+.kotakjudul{
+	float:left;
+	width:26px;
+	height:26px;
+	text-align:center;
+	margin-right:5px;
+}
+	.container > header  img{
+		height:50px;
+		margin:0 3px 0 0;
+	}
+	.container > header  span.dua {
+		letter-spacing: 0.3em;
+		font-size: 1em;
+		top:6px;
+	}
+	.container > header span.tiga {
+		font-size: 28px;
+		letter-spacing: 0.5px;
+	}
+	.yel{
+	color:white;
+	font-size:13px
+}
+}
+
+@media screen and (max-width: 16em) {
+
+	.container > header  img{
+		height:45px;
+		margin:0 3px 0 0;
+	}
+	.container > header  span.dua {
+		letter-spacing: 0.2em;
+		font-size: 10px;
+		top:6px;
+	}
+	.container > header span.tiga {
+		font-size: 23px;
+		letter-spacing: 0.5px;
+	}
+	.yel{
+	color:white;
+	font-size:13px
+}
+}
